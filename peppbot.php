@@ -1,6 +1,6 @@
 <?php
 //Todo: Importera in de fina orden från en separat fil
-$finaOrd = array('fin', 'snäll', 'mysig', 'trevlig', 'effektiv', 'bra', 'på hugget', 'här', 'vild', 'härlig', 'fantastisk', 'en av de bästa', 'den bästaste tjejen', 'en skaplig tjej', 'helt ok', 'underbar', 'typ tokbra', 'helt jävla grym', 'tydligen från en annan planet', 'nedsänd från gud själv', 'en superhjältinna', 'den femte okända musketören', 'frääääsch', 'läcker', 'mighty fine', 'bedårande', 'en pingla', 'som dagg på en sommaräng i motljus och morgondimma', 'för Wakakuu som Batman är för Gotham City', 'spröd som en pepparkaka', 'milfig i medvind', 'förtjust i någon på kontoret', 'glad som en glass', 'mustig', 'förälskad i Navision', 'enligt rykten väldigt nära nu att fråga chans på Postis-Uffe', 'het som en komet!', 'en belevad ung tjej', 'vrålhet', 'lite bakis idag', 'brunstig', 'välbevarad', 'väluppfostrad', 'avundsjuk', 'trollsk', 'som en drönare', 'balsamerad', 'glad för det lilla', 'uppskattar komplimanger och choklad', 'som en groda, lever på hoppet');
+    $finaOrd = array('fin', 'snäll', 'mysig', 'trevlig', 'effektiv', 'bra', 'på hugget', 'här', 'vild', 'härlig', 'fantastisk', 'en av de bästa', 'den bästaste tjejen', 'en skaplig tjej', 'helt ok', 'underbar', 'typ tokbra', 'helt jävla grym', 'tydligen från en annan planet', 'nedsänd från gud själv', 'en superhjältinna', 'den femte okända musketören', 'frääääsch', 'läcker', 'mighty fine', 'bedårande', 'en pingla', 'som dagg på en sommaräng i motljus och morgondimma', 'för Wakakuu som Batman är för Gotham City', 'spröd som en pepparkaka', 'milfig i medvind', 'förtjust i någon på kontoret', 'glad som en glass', 'mustig', 'förälskad i Navision', 'enligt rykten väldigt nära nu att fråga chans på Postis-Uffe', 'het som en komet!', 'en belevad ung tjej', 'vrålhet', 'lite bakis idag', 'brunstig', 'välbevarad', 'väluppfostrad', 'avundsjuk', 'trollsk', 'som en drönare', 'balsamerad', 'glad för det lilla', 'uppskattar komplimanger och choklad', 'fundersam över hur man räknar ut 83x201', 'misstänksam på 4 lingon och en björn', 'ihop med en gammal tant vid namn Eivor', 'en Ågren.. eller en Feka? Hörde jag Panini?', 'spindeln i sitt eget nät', 'lite nervös över Ulfstengate');
 
 if (!(is_file('settings.txt'))) die('settings.txt does not exist');
 $ini = parse_ini_file('settings.txt');
@@ -8,8 +8,8 @@ $ini = parse_ini_file('settings.txt');
 $msgs = array();
 
 //Todo: Settings-ify
-$people = array('@sandra', '@saris', '@maria');
-$supporters = array('@fredrik', '@sven', '@linda');
+$people = array('Sandra', 'Sara', 'Maria');
+$supporters = array('Fredrik', 'Sven', 'Linda', 'Cissi', 'Millan', 'Johanna', 'Jennifer?');
 $extraPepp = array('Håller du inte med', 'Eller vad tycker du', 'Visst stämmer det', 'Klart det är så', 'Och detsamma stämmer väl in på dig', 'För att inte tala om dig');
 $msgs[] = $people[array_rand($people)]." är ".$finaOrd[array_rand($finaOrd)].".";
 
