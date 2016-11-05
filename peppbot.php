@@ -28,6 +28,10 @@ if (isset($argv[1])) {
             $imgUrl = getRandomWakanewsImageUrl();
             $msgs[] = "$imgUrl\nJag gillar den här ".$adjektiv[array_rand($adjektiv)]." saken! Den skulle sitta bra på dig, $subject!";
         }
+        echo "Sending these messages:\n";
+        print_r($msgs);
+    } else {
+        echo "No action taken.\n";
     }
 }
 
