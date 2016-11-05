@@ -45,7 +45,6 @@ foreach ($msgs as $nr => $msg) {
     } catch (Exception $e) {
         throw($e);
     }
-    echo "$nr ".count($msgs)."\n";
     if ($nr+1<count($msgs)) {
         sleep(5);
     }
